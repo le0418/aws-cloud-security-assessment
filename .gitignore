@@ -1,0 +1,48 @@
+﻿# Terraform
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+crash.*.log
+*.tfvars
+!*.tfvars.example
+.terraformrc
+terraform.rc
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Credentials and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials
+secrets.json
+*secret*.json
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.coverage
+htmlcov/
+
+# Local reports and potentially sensitive evidence
+reports/*
+!reports/.gitkeep
+evidence/*
+!evidence/.gitkeep
+
+# Local configuration
+config/local*
+
+# Local AWS budget configuration
+budget/
